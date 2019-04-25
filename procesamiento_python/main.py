@@ -10,6 +10,7 @@ Condiciones:
 from classes.conexionDB import ConexionDB
 from classes.csvScanner import CsvScanner
 from classes.controlador import ControladorDatos
+from classes.arboles import Arboles
 
 if __name__ == "__main__":
     #Contenedores de informacion
@@ -30,6 +31,7 @@ if __name__ == "__main__":
     scanner = CsvScanner()
     database = ConexionDB()
     controlador = ControladorDatos()
+    arboles = Arboles()
 
     #Base de datos
     database.limpiar_tablas_postgres()
@@ -113,7 +115,7 @@ if __name__ == "__main__":
     '''
     consumo_electrico_2010_2017 = scanner.leer_consumo_electrico_municipios_2010_2017('cfe_data/consumo.csv')
 
-    #controladores
+    #controladores y limpieza de datos
     controlador.controlador_poblacion_2010(database, poblacion_2010)
     controlador.controlador_poblacion_2010_2017(database, poblacion_2010, natalidad_2010_2017, mortalidad_2010_2017)
     controlador.controlador_poblacion_2018_2019(database, poblacion_2018_2019)
@@ -126,4 +128,24 @@ if __name__ == "__main__":
     controlador.controlador_promedio_actividad_trimestral_2010_2017(database, promedio_actividad_trimestral_2010_2017)
     controlador.controlador_exportaciones_entidades_2010_2018(database, exportaciones_entidades_2010_2018)
     controlador.controlador_consumo_electrico_municipios_2010_2017(database, consumo_electrico_2010_2017)
-  
+
+    #Arboles de decisiones 
+    '''
+        Arbol de decisiones para el turismo
+    '''
+    arboles.clasificacion_turismo(database)
+    '''
+        Arbol de decision para la actividad economica trimestral
+    '''
+
+    '''
+        Arbol de decisiones de valores agregados por actividad economica
+    '''
+
+    '''
+        Arbol de decisiones de exportaciones
+    '''
+
+    '''
+        Arbol de decisiones para numero de negocios
+    '''

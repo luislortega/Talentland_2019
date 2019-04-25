@@ -23,7 +23,7 @@ class ConexionDB:
     def crear_tablas_postgres(self):
         create_table_command = "CREATE TABLE mexico(id serial PRIMARY KEY, poblacion_total JSON, pib JSON)"
         self.cursor.execute(create_table_command)
-        create_table_command = "CREATE TABLE entidad_federativa(id serial PRIMARY KEY, nombre_entidad varchar(100), lat varchar, long varchar, exportaciones JSON, poblacion JSON, patentes JSON, unidades_economicas JSON, turismo JSON, actividad_economica_promedio JSON, actividades_economicas JSON)"
+        create_table_command = "CREATE TABLE entidad_federativa(id serial PRIMARY KEY, nombre_entidad varchar(100), lat varchar, long varchar, exportaciones JSON, poblacion JSON, patentes JSON, unidades_economicas JSON, turismo JSON, actividad_economica_promedio JSON, actividades_economicas JSON, estado_turismo varchar)"
         self.cursor.execute(create_table_command)
         create_table_command = "CREATE TABLE municipios(id serial PRIMARY KEY, lat varchar, long varchar, nombre varchar, consumo_cfe JSON, promedio_total_estatal varchar)"
         self.cursor.execute(create_table_command)
@@ -111,3 +111,15 @@ class ConexionDB:
             insert_command = "INSERT INTO municipios(nombre, consumo_cfe) VALUES ('"+str(nombre)+"','"+json.dumps(consumo_municipio[i])+"')"
             self.cursor.execute(insert_command)
         print("[✔] Consumo electrico por municipio en todo Mexico insertado en la base de datos")
+
+    def obtener_turismo(self):
+        self.cursor.execute("SELECT turismo from entidad_federativa")
+        turismo = self.cursor.fetchall()
+        return turismo
+        print("[✔] Obtencion de los datos limpios del turismo desde la base de datos")
+
+    def actualizar_estado_turismo(self, _id, estado):
+        update_command = "UPDATE entidad_federativa SET estado_turismo='"+estado+"' where id="+str(_id+1)
+        self.cursor.execute(update_command)
+        #print("[DEV] ACTUALIZNDO EL ESTADO EN BASE AL ARBOL DE DECISIONES")
+        

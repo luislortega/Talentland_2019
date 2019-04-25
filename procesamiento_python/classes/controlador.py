@@ -82,7 +82,7 @@ class ControladorDatos:
                 turistas_2010_2018[x][y] = turistas_2010_2018[x][y].replace(",","")         
                 turistas_2010_2018[x][y] = turistas_2010_2018[x][y].replace('"',"")
                 turistas_2010_2018[x][y] = turistas_2010_2018[x][y].replace('\n',"")
-            turistas_2010_2018_final.append({"2010": turistas_2010_2018[x][1], "2011": turistas_2010_2018[x][2], "2012": turistas_2010_2018[x][3],"2013": turistas_2010_2018[x][4],"2014": turistas_2010_2018[x][5],"2015": turistas_2010_2018[x][6], "2016": turistas_2010_2018[x][7],"20107": turistas_2010_2018[x][8],"2018": turistas_2010_2018[x][9]})
+            turistas_2010_2018_final.append({"2010": turistas_2010_2018[x][1], "2011": turistas_2010_2018[x][2], "2012": turistas_2010_2018[x][3],"2013": turistas_2010_2018[x][4],"2014": turistas_2010_2018[x][5],"2015": turistas_2010_2018[x][6], "2016": turistas_2010_2018[x][7],"2017": turistas_2010_2018[x][8],"2018": turistas_2010_2018[x][9]})
         print("[✔] Procesamiento de los turitas por entidad federativa del 2010 hasta el 2018")
         database.insertar_turistas_2010_2018(turistas_2010_2018_final)
 

@@ -1,4 +1,8 @@
 # Hackathon Talent land 2019 / Monkey Coders
+Documento del proyecto: ...
+Presentacion: ...
+
+## Descripcion
 La generación de grandes ciudades en México supone un gran impulsor económico que representa una mejora en el bienestar de las personas, pues al haber una mayor concentración de personas en un mismo lugar se produce un mayor encuentro entre la oferta y la demanda del mercado. De este modo, la aglomeración de personas en un mismo lugar provoca “economías de escalas” provocando que el costo medio por persona de determinados servicios se reduzca en función del aumento de la población.
  
 Cada vez más gente emigra de sus pueblos natales en busca de alguna gran ciudad donde desarrollarse de manera personal y profesional. Existen ciudades receptoras naturales de población que habita en zonas aledañas a poblaciones pequeñas, que se desplazan al centro urbano más cercano, tal vez por el desgaste de sus condiciones personales.
@@ -43,7 +47,7 @@ Puede ser del 2014 a la fecha
 - [x] Python / R
 - [x] PostgreSQL: Se espera que los datos estén almacenados en una BD PostgreSQL.
 - [x] Un modelo de Machine Learning o Modelo Estadístico (en Python o R)
-- [x] Una web app en Azure (Stack libre con excepción de DB) que utilice una DB PostgreSQL y el modelo de Machine Learning anterior.
+- [ ] Una web app en Azure (Stack libre con excepción de DB) que utilice una DB PostgreSQL y el modelo de Machine Learning anterior.
 
 ## Evaluacion de documento
 
