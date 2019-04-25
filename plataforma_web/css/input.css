@@ -16,6 +16,8 @@ input {
 }
 
 .label {
+    font-weight: 600;
+    color: #6A6969;
     display: flex;
     justify-self: center;
     padding: 0 6vw;
