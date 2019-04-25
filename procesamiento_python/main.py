@@ -137,7 +137,7 @@ if __name__ == "__main__":
     '''
         Arbol de decision para la actividad economica trimestral
     '''
-
+    arboles.clasificacion_actividad_economica(database)
     '''
         Arbol de decisiones de valores agregados por actividad economica
     '''
