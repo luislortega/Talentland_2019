@@ -1,3 +1,16 @@
+'''
+@author: Monkey Coders
+@version: 1
+
+Este prototipo en Python con estandar MVC, filtra y procesa los datos para poder ser exportado a otras plataformas.
+
+Condiciones:
+2010 - Actualidad
+'''
+from classes.conexionDB import ConexionDB
+from classes.csvScanner import CsvScanner
+from classes.controlador import ControladorDatos
+
 if __name__ == "__main__":
     #Contenedores de informacion
     poblacion_2010 = []
