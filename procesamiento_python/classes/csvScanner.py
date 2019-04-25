@@ -181,3 +181,13 @@ class CsvScanner:
         
         print("[✔] Promedio de los indicadores trimestrales por entidades 2010 - 2017 minados. Fuente: ITAEE/INEGI")
         return actividad_trimestral_2010_2017
+    
+    def leer_consumo_electrico_municipios_2010_2017(self, filename):
+        consumo_electrico_municipios_2010_2017 = []
+        with open(filename, 'r') as csvfile:
+            csvFileReader = csv.reader(csvfile)
+            for i, row in enumerate(csvfile):
+                if row.find("TOTAL") !=-1 and row.find("N a c i o n a l") == -1:
+                    consumo_electrico_municipios_2010_2017.append(row)
+        print("[✔] Consumo electrico por municipio 2010 - 2017 minados. Fuente: CFE")
+        return consumo_electrico_municipios_2010_2017
