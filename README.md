@@ -1,6 +1,8 @@
 # Hackathon Talent land 2019 / Monkey Coders
-Documento del proyecto: ...
-Presentacion: ...
+
+Documento del proyecto: https://docs.google.com/document/d/1gH8tfxabXI_TvWqpQLXhHLkjwLK3frxWIzdsNrmwhCQ/edit?fbclid=IwAR3rLrzeed7oE-Z8JQre3ImvISL5aZN7xcPyQ_JbMjQ3XFLndcvRyBozWVo#
+
+Presentacion: https://docs.google.com/presentation/d/1bFQ8X2zFCHESU6JXK-vbEg-kzyimnCrTwn-dNK49wNA/edit?fbclid=IwAR3facJtZxOhRqNrQ6Q09qBqAndRAMyb0dS1LjY5XzRU-1-OTmtrzgtEmFc#slide=id.g58d2d8646c_12_1
 
 ## Descripcion
 La generación de grandes ciudades en México supone un gran impulsor económico que representa una mejora en el bienestar de las personas, pues al haber una mayor concentración de personas en un mismo lugar se produce un mayor encuentro entre la oferta y la demanda del mercado. De este modo, la aglomeración de personas en un mismo lugar provoca “economías de escalas” provocando que el costo medio por persona de determinados servicios se reduzca en función del aumento de la población.
@@ -47,7 +49,7 @@ Puede ser del 2014 a la fecha
 - [x] Python / R
 - [x] PostgreSQL: Se espera que los datos estén almacenados en una BD PostgreSQL.
 - [x] Un modelo de Machine Learning o Modelo Estadístico (en Python o R)
-- [ ] Una web app en Azure (Stack libre con excepción de DB) que utilice una DB PostgreSQL y el modelo de Machine Learning anterior.
+- [x] Una web app en Azure (Stack libre con excepción de DB) que utilice una DB PostgreSQL y el modelo de Machine Learning anterior.
 
 ## Evaluacion de documento
 

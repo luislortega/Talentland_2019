@@ -31,6 +31,9 @@ class Arboles:
                 valores.append(valor)
             valores_anuales.append(valores)
         
+        print(valores_anuales)
+        
+        
         for x in range(0, 32):
             if float(valores_anuales[8][x]["2018"]) >= 6.0:
                 database.actualizar_estado_turismo(x,"* Su crecimiento turistico sera alta durante 2019.")
