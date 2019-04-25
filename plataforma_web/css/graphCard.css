@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+}
+
+.container > * {
+    width: 350px;
+    height: 250px;    
+    margin: 15px;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(184,180,184,1);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(184,180,184,1);
+    box-shadow: 0px 0px 9px 1px rgba(184,180,184,1);
+    border-radius: 10px;    
+    color: rgb(47, 47, 47);    
+    padding: 0 20px;    
+}
+
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+  
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+  
+  .focus circle {
+  fill: none;
+  stroke: steelblue;
+}

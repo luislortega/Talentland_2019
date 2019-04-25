@@ -1,0 +1,65 @@
+<!-- 
+@author: Monkey Coders
+Plataforma: web
+Tecnologias: CSS/HTML/JAVASCRIPT
+Estandar: ECMA6  
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Map</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/graphCard.css">
+	<link rel="stylesheet" href="css/mapCard.css">
+	<link rel="stylesheet" href="css/input.css">
+	<link rel="stylesheet" href="css/title.css">
+</head>
+
+<body>
+	<div class="title">
+		<h2>Estados</h3>
+		<p>Estadisticas de estado</p>
+	</div>
+	<form>
+		<div class="label">
+			<label for="normalInput">Selecciona un estado</label>
+		</div>		
+		<input type="text" id="normalInput" name="normalInput">
+	</form>	
+	<div class="mapCard">
+		<div id="map">
+		</div>
+	</div>
+	<div id="alertBottom">
+		<div id="closeAlertBottom">x</div>
+		<div class="container">
+			<div class="graphCard">
+				<h4>PIB</h4>
+			</div>
+			<div class="graphCardTwo">
+				<h4>Población</h4>
+			</div>
+			<div class="graphCardThree">
+				<h4>Fuerza Laboral</h4>
+			</div>
+		</div>
+		<a href="#" target="_blank"></a>.
+		<!--a class="cookieConsentOK">That's Fine</a>-->
+	</div>
+
+
+	<script src="js/map.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="js/exampleChart.js"></script>
+	<script src="js/exampleChart2.js"></script>
+	<script src="js/exampleChart3.js"></script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzC56Now0wUNBdlUqNhJ9skT0d5uXOdHY&callback=initMap&libraries=places"
+		async defer></script>
+</body>
+
+</html>
