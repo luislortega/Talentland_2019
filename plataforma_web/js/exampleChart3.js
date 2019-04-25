@@ -1,7 +1,7 @@
 // 2. Use the margin convention practice 
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
-  , width = 307  // Use the window's width 
-  , height = 155; // Use the window's height
+, width = 410  // Use the window's width 
+, height = 225; // Use the window's height
 
 // The number of datapoints
 var n = 21;
@@ -31,7 +31,7 @@ var svg = d3.select(".graphCardThree").append("svg")
 	.attr("height", '100%')
 	.append("g")
 	.attr("align", "center")
-	.attr("transform", "translate(" + margin.left + "," +0 + ")");
+	.attr("transform", "translate(" + 30 + "," +0 + ")");
 
 // 3. Call the x axis in a group tag
 svg.append("g")

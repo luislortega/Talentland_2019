@@ -1,10 +1,17 @@
 .title{
     margin: 0 6vw;
     margin-bottom: 50px;    
+    font-family: 'Roboto';
 }
 
 h2 {
     font-size: 40px;
-    color: rgb(107, 107, 107);
+    color: #929292;
+    font-weight: 400;
     height: 20px;
+}
+
+p {
+    color: #929292;
+    font-weight: 400;
 }

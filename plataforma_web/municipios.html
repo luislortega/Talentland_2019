@@ -1,0 +1,171 @@
+<!-- 
+@author: Monkey Coders
+Plataforma: web
+Tecnologias: CSS/HTML/JAVASCRIPT
+Estandar: ECMA6  
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Map</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/graphCard.css">
+	<link rel="stylesheet" href="css/mapCard.css">
+	<link rel="stylesheet" href="css/input.css">
+	<link rel="stylesheet" href="css/title.css">
+	<link rel="stylesheet" href="css/topPanel.css">
+	<link rel="stylesheet" href="css/listItem.css">
+	<link rel="stylesheet" href="css/mainHeader.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Roboto:400,500" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="mainHeader">
+		<h2 class="presentation">Mexdata</h2>
+	</div>
+	<hr>
+	<div class="panelContainer">
+		<div class="panel">
+			<a href="">
+				<div class="listItem">
+					<img src="img/menu.svg" alt="">
+					<p>Menú</p>
+				</div>
+			</a>	
+			
+			<a href="index.html">
+				<div class="listItem">
+						<img src="img/mexico.svg" alt="">
+						<p>Estados</p>
+				</div>
+			</a>
+			
+				<div class="listItem">
+					<svg class="miniLogo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+				   <g>
+					   <g>
+						   <g>
+							   <path d="M472,464h-48V200c0-4.418-3.582-8-8-8H304V8c0-4.418-3.582-8-8-8H88c-4.418,0-8,3.582-8,8v456H8c-4.418,0-8,3.582-8,8
+								   s3.582,8,8,8h464c4.418,0,8-3.582,8-8S476.418,464,472,464z M168,464h-32v-72c0-4.418,3.582-8,8-8h16c4.418,0,8,3.582,8,8V464z
+									M200,200v264h-16v-72c0-13.255-10.745-24-24-24h-16c-13.255,0-24,10.745-24,24v72H96V16h192v176h-80
+								   C203.582,192,200,195.582,200,200z M408,464H216V208h192V464z"/>
+							   <path d="M256,112h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C264,115.582,260.418,112,256,112z
+									M248,160h-32v-32h32V160z"/>
+							   <path d="M256,32h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8V40C264,35.582,260.418,32,256,32z
+									M248,80h-32V48h32V80z"/>
+							   <path d="M176,112h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,115.582,180.418,112,176,112z
+									M168,160h-32v-32h32V160z"/>
+							   <path d="M176,32h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8V40C184,35.582,180.418,32,176,32z
+									M168,80h-32V48h32V80z"/>
+							   <path d="M176,192h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,195.582,180.418,192,176,192z
+									M168,240h-32v-32h32V240z"/>
+							   <path d="M176,272h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,275.582,180.418,272,176,272z
+									M168,320h-32v-32h32V320z"/>
+							   <path d="M328,368h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,364.418,323.582,368,328,368z
+									M336,320h32v32h-32V320z"/>
+							   <path d="M328,288h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,284.418,323.582,288,328,288z
+									M336,240h32v32h-32V240z"/>
+							   <path d="M328,448h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,444.418,323.582,448,328,448z
+									M336,400h32v32h-32V400z"/>
+							   <path d="M248,368h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,364.418,243.582,368,248,368z
+									M256,320h32v32h-32V320z"/>
+							   <path d="M248,288h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,284.418,243.582,288,248,288z
+									M256,240h32v32h-32V240z"/>
+							   <path d="M248,448h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,444.418,243.582,448,248,448z
+									M256,400h32v32h-32V400z"/>
+						   </g>
+					   </g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   <g>
+				   </g>
+				   </svg>
+					<p class="turnedOn">Municipios</p>
+				</div>
+
+			<a href="pais.html">
+					<div class="listItem">
+						<img src="img/country.svg" alt="">
+					<p>País</p>
+				</div>
+			</a>			
+		</div>
+	</div>
+	<hr>
+	<div class="title">
+		<h2>Municipios</h3>
+			<p>Estadisticas de municipios</p>
+	</div>
+	<form>
+		<div class="label">
+			<label for="normalInput">Selecciona un estado</label>
+		</div>
+		<input type="text" id="normalInput" name="normalInput">
+		<div class="label">
+				<label for="normalInput2">Selecciona un municipio</label>
+			</div>
+		<input type="text" id="normalInput2" name="normalInput2">
+	</form>
+	<div class="mapCard">
+		<div id="map">
+		</div>
+	</div>
+	<div id="alertBottom">
+		<div id="closeAlertBottom">x</div>
+		<div class="container">
+			<div class="graphCard">
+				<h4>CFE</h4>
+			</div>
+			<div class="graphCardTwo">
+				<h4>CNVB</h4>
+			</div>		
+		</div>
+		<a href="#" target="_blank"></a>.
+		<!--a class="cookieConsentOK">That's Fine</a>-->
+	</div>
+
+
+	<script src="js/map.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="js/exampleChart.js"></script>
+	<script src="js/exampleChart2.js"></script>
+	<script src="js/exampleChart3.js"></script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzC56Now0wUNBdlUqNhJ9skT0d5uXOdHY&callback=initMap&libraries=places"
+		async defer></script>
+</body>
+
+</html>

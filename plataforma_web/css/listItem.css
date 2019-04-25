@@ -1,0 +1,33 @@
+.mainHeader {    
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 0 6vw; 
+}
+
+
+img {
+    display: flex;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+.miniLogo {
+    display: flex;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+path {
+    fill: #4356FF;    
+}
+
+.turnedOn {
+    fill: #4356FF;
+    color: #4356FF; 
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,7 +1,7 @@
 // 2. Use the margin convention practice 
 var margin = {top: 50, right: 50, bottom: 50, left: 50}
-  , width = 307  // Use the window's width 
-  , height = 155; // Use the window's height
+  , width = 410  // Use the window's width 
+  , height = 225; // Use the window's height
 
 // The number of datapoints
 var n = 21;
@@ -20,7 +20,8 @@ var yScale = d3.scaleLinear()
 var line = d3.line()
     .x(function(d, i) { return xScale(i); }) // set the x values for the line generator
     .y(function(d) { return yScale(d.y); }) // set the y values for the line generator 
-    .curve(d3.curveMonotoneX) // apply smoothing to the line
+    .curve(d3.curveMonotoneX)        
+    // apply smoothing to the line
 
 // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
 var dataset = d3.range(n).map(function(d) { return {"y": d3.randomUniform(1)() } })
@@ -31,7 +32,7 @@ var svg = d3.select(".graphCard").append("svg")
 	.attr("height", '100%')
 	.append("g")
 	.attr("align", "center")
-	.attr("transform", "translate(" + margin.left + "," +0 + ")");
+	.attr("transform", "translate(" + 30 + "," +0 + ")");
 
 // 3. Call the x axis in a group tag
 svg.append("g")
@@ -63,33 +64,3 @@ svg.selectAll(".dot")
         this.attr('class', 'focus')
 		})
       .on("mouseout", function() {  })
-//       .on("mousemove", mousemove);
-
-//   var focus = svg.append("g")
-//       .attr("class", "focus")
-//       .style("display", "none");
-
-//   focus.append("circle")
-//       .attr("r", 4.5);
-
-//   focus.append("text")
-//       .attr("x", 9)
-//       .attr("dy", ".35em");
-
-//   svg.append("rect")
-//       .attr("class", "overlay")
-//       .attr("width", width)
-//       .attr("height", height)
-//       .on("mouseover", function() { focus.style("display", null); })
-//       .on("mouseout", function() { focus.style("display", "none"); })
-//       .on("mousemove", mousemove);
-  
-//   function mousemove() {
-//     var x0 = x.invert(d3.mouse(this)[0]),
-//         i = bisectDate(data, x0, 1),
-//         d0 = data[i - 1],
-//         d1 = data[i],
-//         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-//     focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
-//     focus.select("text").text(d);
-//   }
